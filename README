@@ -1,0 +1,59 @@
+Bharat Ghar Docs — Free Indian Housing Society Tools
+Live Demo: https://toolstree.github.io/
+GitHub: https://github.com/toolstree/bharatghar.github.io
+Status: Live • 100% Client-Side • No Data Stored
+
+Free tools for Indian tenants and housing societies to generate HRA Rent Receipts, Rent Agreements, Maintenance Receipts, Society NOC for Passport & Tenant Police Verification, and Rent Increment Letters. Built to save Rs 50-100 per receipt that paid tools charge.
+
+Why Free? Paid models get copied in 1 day. Free + AdSense = sustainable + lakhs of families get access.
+
+🧩 What it does
+HRA Rent Receipt Generator – Monthly receipts for Section 80GG exemption
+11-Month Rent Agreement – Standard Maharashtra format
+Maintenance Receipt – CHS maintenance with sinking fund, water, electricity
+Society NOC – Passport – NOC for passport issuance
+Society NOC – Tenant Police Verification – Landlord + Society NOC
+Rent Increment Letter – Notice for rent increase
+All PDFs are generated in-browser. No backend, no data collection.
+
+🛠️ Tech Stack
+Frontend: HTML5, TailwindCSS, Vanilla JavaScript (no framework)
+PDF Generation: Client-side HTML-to-PDF via window.print() – instant, private
+Hosting: GitHub Pages
+Monetization: Google AdSense (sustainable free model)
+Extras: PWA Manifest, robots.txt, sitemap.xml, service worker
+🚀 How to Run Locally
+bash
+git clone https://github.com/toolstree/bharatghar.github.io.git
+cd bharatghar.github.io
+# Just open index.html – no build step
+open index.html
+No npm install needed. 100% static.
+
+🧠 What I Learned / Why This Matters for AI Agent Roles
+This was my first indie product proving I can:
+
+Ship full product end-to-end alone – idea, design, code, SEO, AdSense, deploy
+Think about user privacy (zero storage) and business model (free scales better)
+Handle Indian housing society edge cases (PAN, landlord/tenant flows, society stamp)
+Next iteration (Agent Layer): I'm adding an LLM agent on top:
+
+Tool: generate_noc / generate_receipt with function calling
+RAG: Retrieve Maharashtra society bylaws
+Agent flow: User says "Mujhe passport NOC chahiye" in Hindi → Agent extracts flat, society, dates → calls tool → generates PDF
+Eval: Check format correctness, Hindi/Marathi translation accuracy
+📸 Screenshots
+Add 2-3 screenshots here: Form + Generated PDF
+
+🔒 Privacy
+We don't store any data. Everything runs in your browser. See privacy-policy.html.
+
+📄 License
+MIT – Free for all Indians to use and fork.
+
+👤 Author
+Built by Toolstree – Indie tools for Bharat. Thane, Maharashtra.
+
+Email: [your email]
+LinkedIn: [your link]
+For Recruiters: This is Project 1 of 3. My main AI Agent work is SPY NETRA (multilingual news agent with Supabase, tool-calling, RAG). Private agent repos available on request. Full-time, remote, PST overlap available (8pm-2am IST).
